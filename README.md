@@ -17,7 +17,7 @@ A simple and fully responsive Tic Tac Toe game implemented using HTML, CSS, and 
 
 ## Demo
 
-You can try the game live at [Demo Link](https://your-demo-url.com).
+You can try the game live at [Demo Link](https://saifiimuhammad.github.io/TicTacToe-Game/).
 
 ## Features
 
