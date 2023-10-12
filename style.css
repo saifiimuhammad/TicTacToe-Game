@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Utility Classes */
+.b-top {
+    border-top: 2px solid rgb(15, 15, 15);
+}
+.b-bottom {
+    border-bottom: 2px solid rgb(15, 15, 15);
+}
+.b-left {
+    border-left: 2px solid rgb(15, 15, 15);
+}
+.b-right {
+    border-right: 2px solid rgb(15, 15, 15);
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    color: crimson;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-block: 30px 10px;
+}
+h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-block: 0px 30px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-area {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+}
+
+.boxes {
+    text-align: center;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+span {
+    font-size: 80px;
+    font-weight: 700;
+    color: rgb(20, 20, 20);
+}
+
+/* Styling the Status Container */
+.status-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.background {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: .9;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.status {
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: whitesmoke;
+    opacity: 1;
+}
+
+.reset-button {
+    margin-top: 10px;
+    padding: .75rem 1.5rem;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgb(15, 15, 15);
+    border-radius: 5px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+.show-status {
+    display: initial;
+}
+
+@media screen and (max-width: 460px) {
+    h1 {
+        font-size: 2rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .play-area {
+        grid-template-columns: repeat(3, 8rem);
+    }
+    .boxes {
+        height: 8rem;
+    }
+}
+@media screen and (max-width: 460px) {
+    .play-area {
+        grid-template-columns: repeat(3, 6rem);
+    }
+    .boxes {
+        height: 6rem;
+    }
+}
